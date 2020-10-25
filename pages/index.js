@@ -1,7 +1,6 @@
 import Layout from '@components/Layout'
-import PostList from '@components/PostList'
-
-import getPosts from '@utils/getPosts'
+// import PostList from '@components/PostList'
+// import getPosts from '@utils/getPosts'
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
@@ -16,9 +15,9 @@ const Index = ({ posts, title, description, ...props }) => {
         <div className="learn-more-cta">
           <a href="/about">Learn about Sandra Lehamnn</a>
         </div>
-        <main>
+        {/* <main>
           <PostList posts={posts} />
-        </main>
+        </main> */}
       </Layout>
       <style jsx>{`
       .learn-more-cta {
@@ -42,13 +41,13 @@ export default Index
 export async function getStaticProps() {
   const configData = await import(`../siteconfig.json`)
 
-  const posts = ((context) => {
-    return getPosts(context)
-  })(require.context('../posts', true, /\.md$/))
+  // const posts = ((context) => {
+  //   return getPosts(context)
+  // })(require.context('../posts', true, /\.md$/))
 
   return {
     props: {
-      posts,
+      //posts,
       title: configData.default.title,
       description: configData.default.description,
     },
