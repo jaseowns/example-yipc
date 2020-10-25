@@ -66,7 +66,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
         <LocationAndHours />
       </section>
       <footer>
-        Built with <img src="/netliheart.svg" alt="Netlify Heart" /> for you
+      Your Inner Pathways Counseling | Sandra Lehmann, MC, LPC
       </footer>
     </>
   )
