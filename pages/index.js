@@ -7,25 +7,27 @@ const Index = ({ posts, title, description, ...props }) => {
   return (
     <>
       <Layout pageTitle={title} description={description}>
-        <h1 className="title">Welcome to this demo blog!</h1>
-
-        <p className="description">
-          This is a simple blog built with Next, easily deployable on{' '}
-          <a href="https://url.netlify.com/r1j6ybSYU">Netlify</a>.
+        <h1 className="title">Your Inner Pathways Counseling</h1>
+        <h2>Sandra Lehmann, MC, LPC</h2>
+        <h3>Need to Talk to Someone?</h3>
+        <p className="description">        
+        Get help with depression, anxiety, relationships, trauma, grief, and more.
         </p>
+        <div className="learn-more-cta">
+          <a href="/about">Learn about Sandra Lehamnn</a>
+        </div>
         <main>
           <PostList posts={posts} />
         </main>
-        <p>
-          You can look at the repository for this project{' '}
-          <a href="https://github.com/cassidoo/next-netlify-blog-starter">
-            here
-          </a>
-          , and a tutorial on how to build it {` `}
-          <a href="https://url.netlify.com/ByVW0bCF8">here</a>.
-        </p>
       </Layout>
       <style jsx>{`
+      .learn-more-cta {
+        font-size: 2rem;
+        text-align:center;
+      }
+      .learn-more-cta img {
+        display: block;
+      }
         .title {
           margin: 1rem auto;
           font-size: 3rem;

@@ -1,6 +1,6 @@
 import Head from 'next/head'
-
 import Header from './Header'
+import LocationAndHours from './LocationAndHours'
 
 export default function Layout({ children, pageTitle, description, ...props }) {
   return (
@@ -63,6 +63,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       <section className="layout">
         <Header />
         <div className="content">{children}</div>
+        <LocationAndHours />
       </section>
       <footer>
         Built with <img src="/netliheart.svg" alt="Netlify Heart" /> for you
