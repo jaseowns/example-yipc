@@ -13,7 +13,7 @@ const Index = ({ posts, title, description, ...props }) => {
         Get help with depression, anxiety, relationships, trauma, grief, and more.
         </p>
         <div className="learn-more-cta">
-          <a href="/about">Learn about Sandra Lehamnn</a>
+          <a href="/about">Learn about Sandra Lehmann</a>
         </div>
         {/* <main>
           <PostList posts={posts} />
